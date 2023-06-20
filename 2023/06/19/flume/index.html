@@ -257,16 +257,13 @@
 <p>​		a1.sinks &#x3D; k1</p>
 <p>​		# 多个channel使用空格分隔</p>
 <p>​		a1.channels &#x3D; c1 c2</p>
-<pre><code>     # 配置source类型为NetCat,监听地址为本机，端口为44444
-</code></pre>
+<p>​		配置source类型为NetCat，监听地址为本机，端口为4444</p>
 <p>​		a1.sources.r1.type &#x3D; netcat</p>
 <p>​		a1.sources.r1.bind &#x3D; 0.0.0.0</p>
 <p>​		a1.sources.r1.port &#x3D; 44444</p>
-<pre><code>     # 配置sink类型为Logger
-</code></pre>
+<p>​		配置sink类型为Logger</p>
 <p>​		a1.sinks.k1.type &#x3D; logger</p>
-<pre><code>     # 配置channel类型为内存，内存队列最大容量为1000，一个事务中从source接收的Events数量或者发送给sink的Events数量最大为100
-</code></pre>
+<p>​		配置channel类型为内存，内存队列最大容量为1000，一个事务中从source接收的Events数量或者发送给sink的Events数量最大为100</p>
 <p>​		a1.channels.c1.type &#x3D; memory</p>
 <p>​		a1.channels.c1.capacity &#x3D; 1000</p>
 <p>​		a1.channels.c1.transactionCapacity &#x3D; 100</p>
@@ -516,7 +513,7 @@
 <p>​		a1.sinks.k1.hdfs.codeC &#x3D; gzip</p>
 <p>​		a1.sinks.k1.hdfs.fileType &#x3D; CompressedStream</p>
 <p>​	4）启动hdfs</p>
-<p><img src="/..%5Ctypora-user-images%5C14.png" alt="img">)</p>
+<p><img src="/..%5Ctypora-user-images%5C14.png" alt="img"></p>
 <p><img src="/..%5Ctypora-user-images%5C15.png" alt="img"></p>
 <p><img src="/..%5Ctypora-user-images/16.png" alt="img"></p>
 <p>​	5）启动下游node3上的flume agent</p>
@@ -575,7 +572,7 @@
 <p>​		2）启动测试</p>
 <p><img src="/..%5Ctypora-user-images%5C18.png" alt="img"></p>
 <p>（2）Multiplexing Channel Selector</p>
-<p>1）在example11-channel-Multiplexing.conf文件中加入</p>
+<p>​		1）在example11-channel-Multiplexing.conf文件中加入</p>
 <p>#example11-channel-Multiplexing.conf</p>
 <p>a1.sources &#x3D; r1</p>
 <p>a1.channels &#x3D; c1 c2</p>
@@ -623,9 +620,12 @@
 <p>a1.sinks.k2.hdfs.useLocalTimeStamp &#x3D; true</p>
 <p>2）启动测试</p>
 <p><img src="/..%5Ctypora-user-images%5C19.png" alt="img"></p>
-<p>\11. Sink处理器</p>
+<ol start="11">
+<li><p>Sink处理器</p>
 <p>（1）Failover Sink Processor</p>
-<p>1）在上游配置文件（node1）</p>
+<p>​		1）在上游配置文件（node1）</p>
+</li>
+</ol>
 <p>在example12-1-sink-failover.conf中输入</p>
 <p>#example12-1-sink-failover.conf</p>
 <p>a1.sources &#x3D; r1</p>

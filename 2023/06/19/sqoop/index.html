@@ -122,7 +122,7 @@
 <p>​		bin&#x2F;sqoop list-databases \</p>
 <p>​		 –connect jdbc:mysql:&#x2F;&#x2F;node1:3306&#x2F; \</p>
 <p>​		 –username root –password hadoop</p>
-<p><img src="/..%5Ctypora-user-image%5C29.png" alt="img"></p>
+<p><img src="/..%5Ctypora-user-images%5C29.png" alt="img"></p>
 <p>2.Sqoop导入</p>
 <p>（1）全量导入</p>
 <p>​		mysql表数据到hdfs</p>
@@ -162,11 +162,11 @@
 <p> <code>phno</code> varchar(100) DEFAULT NULL,</p>
 <p> <code>email</code> varchar(100) DEFAULT NULL</p>
 <p>) ENGINE&#x3D;InnoDB DEFAULT CHARSET&#x3D;latin1;</p>
-<p>INSERT INTO <code>emp_conn</code> VALUES (‘1201’, ‘2356742’, ‘<a href="mailto:&#103;&#111;&#x70;&#97;&#x6c;&#x40;&#116;&#112;&#46;&#x63;&#111;&#109;">&#103;&#111;&#x70;&#97;&#x6c;&#x40;&#116;&#112;&#46;&#x63;&#111;&#109;</a>‘);</p>
-<p>INSERT INTO <code>emp_conn</code> VALUES (‘1202’, ‘1661663’, ‘<a href="mailto:&#x6d;&#97;&#110;&#105;&#x73;&#104;&#97;&#x40;&#116;&#112;&#x2e;&#x63;&#x6f;&#109;">&#x6d;&#97;&#110;&#105;&#x73;&#104;&#97;&#x40;&#116;&#112;&#x2e;&#x63;&#x6f;&#109;</a>‘);</p>
-<p>INSERT INTO <code>emp_conn</code> VALUES (‘1203’, ‘8887776’, ‘<a href="mailto:&#x6b;&#104;&#97;&#108;&#105;&#x6c;&#x40;&#x61;&#99;&#x2e;&#99;&#111;&#109;">&#x6b;&#104;&#97;&#108;&#105;&#x6c;&#x40;&#x61;&#99;&#x2e;&#99;&#111;&#109;</a>‘);</p>
-<p>INSERT INTO <code>emp_conn</code> VALUES (‘1204’, ‘9988774’, ‘<a href="mailto:&#x70;&#x72;&#x61;&#115;&#97;&#x6e;&#x74;&#x68;&#x40;&#97;&#x63;&#x2e;&#x63;&#111;&#x6d;">&#x70;&#x72;&#x61;&#115;&#97;&#x6e;&#x74;&#x68;&#x40;&#97;&#x63;&#x2e;&#x63;&#111;&#x6d;</a>‘);</p>
-<p>INSERT INTO <code>emp_conn</code> VALUES (‘1205’, ‘1231231’, ‘<a href="mailto:&#x6b;&#x72;&#x61;&#x6e;&#116;&#x68;&#x69;&#64;&#x74;&#x70;&#x2e;&#99;&#111;&#x6d;">&#x6b;&#x72;&#x61;&#x6e;&#116;&#x68;&#x69;&#64;&#x74;&#x70;&#x2e;&#99;&#111;&#x6d;</a>‘);</p>
+<p>INSERT INTO <code>emp_conn</code> VALUES (‘1201’, ‘2356742’, ‘<a href="mailto:&#x67;&#111;&#x70;&#97;&#108;&#x40;&#x74;&#112;&#x2e;&#99;&#111;&#109;">&#x67;&#111;&#x70;&#97;&#108;&#x40;&#x74;&#112;&#x2e;&#99;&#111;&#109;</a>‘);</p>
+<p>INSERT INTO <code>emp_conn</code> VALUES (‘1202’, ‘1661663’, ‘<a href="mailto:&#109;&#97;&#x6e;&#105;&#115;&#104;&#x61;&#64;&#116;&#x70;&#x2e;&#x63;&#x6f;&#x6d;">&#109;&#97;&#x6e;&#105;&#115;&#104;&#x61;&#64;&#116;&#x70;&#x2e;&#x63;&#x6f;&#x6d;</a>‘);</p>
+<p>INSERT INTO <code>emp_conn</code> VALUES (‘1203’, ‘8887776’, ‘<a href="mailto:&#107;&#104;&#97;&#108;&#105;&#x6c;&#64;&#97;&#99;&#x2e;&#x63;&#111;&#109;">&#107;&#104;&#97;&#108;&#105;&#x6c;&#64;&#97;&#99;&#x2e;&#x63;&#111;&#109;</a>‘);</p>
+<p>INSERT INTO <code>emp_conn</code> VALUES (‘1204’, ‘9988774’, ‘<a href="mailto:&#x70;&#114;&#x61;&#x73;&#x61;&#110;&#x74;&#x68;&#64;&#x61;&#x63;&#x2e;&#99;&#111;&#x6d;">&#x70;&#114;&#x61;&#x73;&#x61;&#110;&#x74;&#x68;&#64;&#x61;&#x63;&#x2e;&#99;&#111;&#x6d;</a>‘);</p>
+<p>INSERT INTO <code>emp_conn</code> VALUES (‘1205’, ‘1231231’, ‘<a href="mailto:&#107;&#x72;&#97;&#110;&#116;&#x68;&#x69;&#64;&#116;&#112;&#46;&#x63;&#111;&#x6d;">&#107;&#x72;&#97;&#110;&#116;&#x68;&#x69;&#64;&#116;&#112;&#46;&#x63;&#111;&#x6d;</a>‘);</p>
 <p><img src="/..%5Ctypora-user-images%5C31.png" alt="img"></p>
 <p><img src="/..%5Ctypora-user-images%5C32.png" alt="img"></p>
 <p>(2）全量导入mysql表数据到HDFS</p>
@@ -291,7 +291,7 @@
 <p>4）查看mysql中的数据</p>
 <p><img src="/..%5Ctypora-user-images%5C51.png" alt="img"></p>
 <p>5）新增一个文件</p>
-<p>新增一个文件updateonly_2.txt：<strong>修改了前三条数据并且新增了一条记录</strong></p>
+<p>新增一个文件updateonly_2.txt：修改了前三条数据并且新增了一条记录</p>
 <p>hadoop fs -mkdir &#x2F;sqoop&#x2F;updateonly_2</p>
 <p>hadoop fs -put updateonly_2.txt &#x2F;sqoop&#x2F;updateonly_2</p>
 <p>6）执行更新导出</p>
@@ -316,9 +316,9 @@
 <p>4）查看mysql中的数据</p>
 <p><img src="/..%5Ctypora-user-images%5C54.png" alt="img"></p>
 <p>5）新增文件</p>
-<p>创建文件allowinsert_2.txt。修改前三条数据并且新增了一条记录。上传至 &#x2F;sqoop&#x2F;allowinsert_2&#x2F;目录下</p>
+<p>​	创建文件allowinsert_2.txt。修改前三条数据并且新增了一条记录。上传至 &#x2F;sqoop&#x2F;allowinsert_2&#x2F;目录下</p>
 <p>6）执行更新导出</p>
-<p>bin&#x2F;sqoop export –connect jdbc:mysql:&#x2F;&#x2F;node2:3306&#x2F;userdb –username root –password hadoop –table allowinsert –export-dir &#x2F;sqoop&#x2F;allowinsert_2&#x2F; –update-key id –update-mode allowinsert</p>
+<p>​	bin&#x2F;sqoop export –connect jdbc:mysql:&#x2F;&#x2F;node2:3306&#x2F;userdb –username root –password hadoop –table 	allowinsert –export-dir &#x2F;sqoop&#x2F;allowinsert_2&#x2F; –update-key id –update-mode allowinsert</p>
 <p>7）查看结果</p>
 <p><img src="/..%5Ctypora-user-images%5C55.png" alt="img"></p>
 
